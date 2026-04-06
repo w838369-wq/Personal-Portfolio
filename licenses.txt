@@ -1,0 +1,31 @@
+Image: cute-cats-world.jpg
+Source: Own work - Screenshot of Cute Cats World project
+Created by: Wendi Chen
+License: Personal project screenshot
+Description: Screenshot of the Cute Cats World website showcasing the homepage with cat gallery.
+
+Image: american-breakfast-guide.jpg
+Source: Own work - Screenshot of American Breakfast Guide project
+Created by: Wendi Chen
+License: Personal project screenshot
+Description: Screenshot of the American Breakfast Guide website showing the welcome page.
+
+Image: close.svg
+Source: https://fonts.google.com/icons
+License: Apache License 2.0 - https://www.apache.org/licenses/LICENSE-2.0
+Description: Close icon used for closing mobile menu and modal dialogs.
+
+Image: dark_mode.svg
+Source: https://fonts.google.com/icons
+License: Apache License 2.0 - https://www.apache.org/licenses/LICENSE-2.0
+Description: Dark_mode icon used for dark mode theme toggle button.
+
+Image: light_mode.svg
+Source: https://fonts.google.com/icons
+License: Apache License 2.0 - https://www.apache.org/licenses/LICENSE-2.0
+Description: Light_mode icon used for light mode theme toggle button.
+
+Image: menu.svg
+Source: https://fonts.google.com/icons
+License: Apache License 2.0 - https://www.apache.org/licenses/LICENSE-2.0
+Description: Menu icon used for mobile navigation.

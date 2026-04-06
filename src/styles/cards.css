@@ -1,0 +1,244 @@
+
+.section-title {
+  text-align: center;
+  font-size: 1.875rem;
+  color: #2d3748;
+  margin-bottom: 4rem;
+}
+
+.dark-theme .section-title {
+  color: #f5f0ff;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 3rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.project-card {
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 1rem;
+  overflow: hidden;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.06);
+  transition: all 250ms ease;
+}
+
+.dark-theme .project-card {
+  background: #1d1536;
+  border: 1px solid #3a2c5f;
+  box-shadow: 0 8px 18px rgba(2, 6, 23, 0.35);
+}
+
+.project-card:hover {
+  box-shadow: 0 20px 25px rgba(0, 0, 0, 0.10);
+  transform: translateY(-8px);
+}
+
+.project-image-wrapper {
+  position: relative;
+  width: 100%;
+  height: 250px;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.project-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 350ms ease;
+}
+
+.project-image-wrapper:hover .project-image {
+  transform: scale(1.05);
+}
+
+.image-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 250ms ease;
+}
+
+.project-image-wrapper:hover .image-overlay {
+  opacity: 1;
+}
+
+.overlay-text {
+  color: #ffffff;
+  font-size: 1.125rem;
+  font-weight: 600;
+}
+
+.project-info {
+  padding: 2rem;
+}
+
+.project-title {
+  font-size: 1.25rem;
+  color: #2d3748;
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+.dark-theme .project-title {
+  color: #f5f0ff;
+}
+
+.project-description {
+  color: #4a5568;
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+}
+
+.dark-theme .project-description {
+  color: #e2d9f8;
+}
+
+.tech-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.tech-tag {
+  display: inline-block;
+  background: #f7f8fa;
+  color: #6c5ce7;
+  padding: 0.5rem 1rem;
+  border-radius: 0.25rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+
+.dark-theme .tech-tag {
+  background: #251b42;
+  color: #ddd6fe;
+}
+
+.btn-primary {
+  display: inline-block;
+  padding: 1rem 2rem;
+  background: #6c5ce7;
+  color: #ffffff;
+  font-weight: 600;
+  border-radius: 0.5rem;
+  text-align: center;
+  transition: all 250ms ease;
+  cursor: pointer;
+  border: none;
+}
+
+.dark-theme .btn-primary {
+  background: #a78bfa;
+  color: #ffffff;
+}
+
+.btn-primary:hover {
+  background: #5849c7;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.07);
+  transform: translateY(-2px);
+}
+
+.dark-theme .btn-primary:hover {
+  background: #8b5cf6;
+  color: #ffffff;
+  box-shadow: 0 10px 18px rgba(91, 33, 182, 0.35);
+}
+
+.lightbox-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.9);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 100;
+  padding: 2rem;
+}
+
+.lightbox-close {
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+  width: 3rem;
+  height: 3rem;
+  background: #ffffff;
+  border-radius: 9999px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 250ms ease;
+}
+
+.dark-theme .lightbox-close {
+  background: #f7f8fa;
+}
+
+.lightbox-close:hover {
+  background: #f7f8fa;
+  transform: scale(1.1);
+}
+
+.dark-theme .lightbox-close:hover {
+  background: #eef0f4;
+}
+
+.lightbox-close img {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+.lightbox-image {
+  max-width: 90%;
+  max-height: 90%;
+  object-fit: contain;
+  border-radius: 1rem;
+  box-shadow: 0 20px 25px rgba(0, 0, 0, 0.10);
+}
+
+@media (max-width: 768px) {
+  .projects-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .project-image-wrapper {
+    height: 200px;
+  }
+
+  .section-title {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .project-info {
+    padding: 1.5rem;
+  }
+
+  .project-title {
+    font-size: 1.125rem;
+  }
+
+  .project-description {
+    font-size: 0.875rem;
+  }
+}

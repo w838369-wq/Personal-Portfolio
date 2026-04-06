@@ -1,0 +1,266 @@
+
+.contact-content {
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.contact-content h1 {
+  font-size: 2.25rem;
+  color: #2d3748;
+  margin-bottom: 1.5rem;
+}
+
+.dark-theme .contact-content h1 {
+  color: #f5f0ff;
+}
+
+.contact-content > p {
+  color: #4a5568;
+  font-size: 1.125rem;
+  margin-bottom: 4rem;
+}
+
+.dark-theme .contact-content > p {
+  color: #e2d9f8;
+}
+
+.contact-form {
+  background: #f7f8fa;
+  padding: 3rem;
+  border-radius: 1rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.07);
+  text-align: left;
+}
+
+.dark-theme .contact-form {
+  background: #1d1536;
+  border: 1px solid #3a2c5f;
+  box-shadow: 0 10px 20px rgba(2, 6, 23, 0.35);
+}
+
+.form-group {
+  margin-bottom: 2rem;
+}
+
+.form-label {
+  display: block;
+  color: #2d3748;
+  font-size: 0.875rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.dark-theme .form-label {
+  color: #f5f0ff;
+}
+
+.form-input {
+  width: 100%;
+  padding: 1rem;
+  border: 2px solid #e2e8f0;
+  border-radius: 0.5rem;
+  background: #ffffff;
+  color: #2d3748;
+  font-size: 1rem;
+  font-family: 'Inter', sans-serif;
+  transition: all 250ms ease;
+}
+
+.dark-theme .form-input {
+  background: #140f24;
+  color: #f5f0ff;
+  border-color: #3a2c5f;
+}
+
+.form-input:focus {
+  outline: none;
+  border-color: #6c5ce7;
+  box-shadow: 0 0 0 3px rgba(108, 92, 231, 0.1);
+}
+
+.dark-theme .form-input:focus {
+  border-color: #c4b5fd;
+  box-shadow: 0 0 0 3px rgba(196, 181, 253, 0.24);
+}
+
+.form-input.error {
+  border-color: #f56565;
+}
+
+.form-textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+
+select.form-input {
+  cursor: pointer;
+}
+
+.form-error {
+  display: block;
+  color: #f56565;
+  font-size: 0.875rem;
+  margin-top: 0.5rem;
+  font-weight: 500;
+}
+
+.btn-submit {
+  width: 100%;
+  padding: 1.5rem;
+  font-size: 1.125rem;
+  margin-top: 1.5rem;
+}
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 100;
+  padding: 2rem;
+  animation: fadeIn 0.3s ease;
+}
+
+.modal-content {
+  background: #ffffff;
+  padding: 4rem;
+  border-radius: 1rem;
+  box-shadow: 0 20px 25px rgba(0, 0, 0, 0.10);
+  max-width: 500px;
+  width: 100%;
+  text-align: center;
+  position: relative;
+  animation: slideUp 0.3s ease;
+}
+
+.dark-theme .modal-content {
+  background: #1d1536;
+  border: 1px solid #3a2c5f;
+}
+
+@keyframes slideUp {
+  from {
+    transform: translateY(30px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.modal-close {
+  position: absolute;
+  top: 1.5rem;
+  right: 1.5rem;
+  width: 2.5rem;
+  height: 2.5rem;
+  background: #f7f8fa;
+  border-radius: 9999px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 250ms ease;
+}
+
+.dark-theme .modal-close {
+  background: #251b42;
+}
+
+.modal-close:hover {
+  background: #eef0f4;
+  transform: scale(1.1);
+}
+
+.dark-theme .modal-close:hover {
+  background: #34275a;
+}
+
+.modal-close img {
+  width: 1.25rem;
+  height: 1.25rem;
+}
+
+.modal-icon {
+  width: 4rem;
+  height: 4rem;
+  background: #48bb78;
+  color: #ffffff;
+  font-size: 2rem;
+  border-radius: 9999px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 2rem;
+}
+
+.modal-title {
+  font-size: 1.5rem;
+  color: #2d3748;
+  margin-bottom: 1rem;
+}
+
+.dark-theme .modal-title {
+  color: #f5f0ff;
+}
+
+.modal-text {
+  color: #4a5568;
+  font-size: 1rem;
+  margin-bottom: 3rem;
+}
+
+.dark-theme .modal-text {
+  color: #e2d9f8;
+}
+
+.modal-content .btn-primary {
+  padding: 1rem 3rem;
+}
+
+@media (max-width: 768px) {
+  .contact-content h1 {
+    font-size: 1.875rem;
+  }
+
+  .contact-content > p {
+    font-size: 1rem;
+  }
+
+  .contact-form {
+    padding: 2rem;
+  }
+
+  .modal-content {
+    padding: 3rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .contact-form {
+    padding: 1.5rem;
+  }
+
+  .form-input {
+    font-size: 0.875rem;
+  }
+
+  .btn-submit {
+    font-size: 1rem;
+  }
+
+  .modal-content {
+    padding: 2rem;
+  }
+
+  .modal-title {
+    font-size: 1.25rem;
+  }
+}
